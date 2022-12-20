@@ -1,7 +1,7 @@
 import psycopg2
 import time
 
-# password should come form env file
+# password should not be here. That being said, its here for comfort reasons. 
 
 def connect_to_db():
     conn = psycopg2.connect( 

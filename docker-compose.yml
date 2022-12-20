@@ -13,6 +13,7 @@ services:
     restart: always
     environment:
       - POSTGRES_USER=postgres
+      # password should not be here. That being said, its here for comfort reasons. 
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=patients
     ports:

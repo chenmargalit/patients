@@ -20,7 +20,6 @@ async def root(patientId: int, text: str, response: Response) -> Response:
         code = get_random_code(df)
 
         does_patient_exist = fetch_record('patients_details', 'patient_id', patientId)
-        print(123, does_patient_exist)
         if does_patient_exist['err']:
             raise Exception
 
